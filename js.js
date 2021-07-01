@@ -1,7 +1,9 @@
 const dino = document.querySelector('.dino');
 const background = document.querySelector(".background");
+const pontuacao = document.querySelector('.pontos')
 let isJumping = false;
 let position = 0;
+let pontos = 0;
 
 function handleKeyUp(event){
 	if(event.keyCode === 32 && !isJumping){
@@ -49,6 +51,8 @@ function createCactus(){
 		if(cactusPosition < -60 ){
 			clearInterval(leftInterval);
 			background.removeChild(cactus);
+			pontos += 10;
+			pontuacao.innerText = `${pontos} Pontos`;
 		}else if(cactusPosition > 0 && cactusPosition < 60 && position < 60){
 			//game over
 			clearInterval(leftInterval);

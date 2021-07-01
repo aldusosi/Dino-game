@@ -28,6 +28,11 @@ body{
 	text-align: center;
 }
 
+.pontos{
+	margin-top: 100px;
+	text-align: center;
+}
+
 @keyframes slideRight {
 	from{
 		background-position: 7000%;
