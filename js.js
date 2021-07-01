@@ -60,7 +60,7 @@ function createCactus(){
 			pontos += 10;
 			pontuacao.innerText = `${pontos} Pontos`;
 			if(pontos > record){
-				pontuacao.style.color = "green"
+				pontuacao.style.color = "#666666"
 			}
 		}else if(cactusPosition > 0 && cactusPosition < 60 && position < 60){
 			//game over
