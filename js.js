@@ -65,7 +65,7 @@ function createCactus(){
 		}else if(cactusPosition > 0 && cactusPosition < 60 && position < 60){
 			//game over
 			clearInterval(leftInterval);
-			document.body.innerHTML = "<h1 class='game-over'>Fim de jogo</h1>";
+			document.body.innerHTML = "<h1 class='game-over'>Fim de jogo</h1><div class='reload'><a href='./index.html'>Reload</a></div>";
 			console.log(pontos, record)
 			if(pontos > record){
 				localStorage.setItem('record', pontos);
