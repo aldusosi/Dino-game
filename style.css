@@ -29,7 +29,13 @@ body{
 }
 
 .pontos{
+	color:red;
 	margin-top: 100px;
+	text-align: center;
+}
+
+.record{
+	margin-top: 25px;
 	text-align: center;
 }
 
